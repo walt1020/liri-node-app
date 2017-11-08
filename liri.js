@@ -117,7 +117,7 @@ for(i=0; i<data.tracks.items[0].album.artists.length; i++){
 }
 	console.log("Link to Song: ", data.tracks.items[0].external_urls.spotify);
 	console.log("Album: " + data.tracks.items[0].album.name);
-	opn(data.tracks.items[0].external_urls.spotify);
+	opn(data.tracks.items[0].external_urls.spotify, {wait: false});
 });
 }
 
@@ -143,7 +143,7 @@ for(i=0; i<data.tracks.items[0].album.artists.length; i++){
 }
 	console.log("Link to Song: ", data.tracks.items[0].external_urls.spotify);
 	console.log("Album " + data.tracks.items[0].album.name);
-	opn(data.tracks.items[0].external_urls.spotify);
+	opn(data.tracks.items[0].external_urls.spotify, {wait: false});
 });
 }
 
